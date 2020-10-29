@@ -1,17 +1,23 @@
 function flip(repeat){
 
-for (let i = 0; i < repeat; i++){
+var countHeads = 0;
 
-var coinFlip = Math.round(Math.random());
+  for (let i = 0; i < repeat; i++){
 
-if (coinFlip === 1){
-  console.log('heads');
+    var coinFlip = Math.round(Math.random());
+
+    if (coinFlip === 1){
+    console.log('heads');
+    countHeads = countHeads + 1;
+    }
+
+    if (coinFlip === 0){
+    console.log('tails');
+    }
+  }
+
+  return(countHeads/repeat);
+
 }
 
-if (coinFlip === 0){
-  console.log('tails');
-}
-}
-}
-
-flip(20);
+flip(100);
