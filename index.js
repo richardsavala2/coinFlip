@@ -14,4 +14,4 @@ if (coinFlip === 0){
 }
 }
 
-flip(20); 
+flip(20);
